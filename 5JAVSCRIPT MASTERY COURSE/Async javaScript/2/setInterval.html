@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1rem 1.5rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 3rem;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #4d4b4b46;
+            transition: all 0.3s ease-in;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 10px #4d4b4b;
+        }
+    </style>
+    <title>Set Interval Example</title>
+</head>
+
+<body>
+    <button>Stop Changing</button>
+
+
+    <script>
+        const button = document.querySelector("button");
+        const randomColor = () => {
+            let red = Math.floor(Math.random() * 256);
+            let green = Math.floor(Math.random() * 256);
+            let blue = Math.floor(Math.random() * 256);
+            return `rgb(${red},${green},${blue})`
+        }
+        const id = setInterval((e) => {
+            document.body.style.backgroundColor = randomColor();
+        }, 1000)
+        button.addEventListener("click", (e) => {
+            clearInterval(id);
+        })
+
+    </script>
+</body>
+
+</html>

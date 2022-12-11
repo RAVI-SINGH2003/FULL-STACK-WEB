@@ -1,0 +1,30 @@
+/*align self is a property of flex items override align-items property for  flex-items*/
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border:10px solid red;
+    display: flex;
+    height:600px;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.container .box{
+   border: 2px solid green;
+   background-color:lightgreen;
+   width: 400px;
+
+}
+.box1{
+    align-self: flex-start;
+}
+.box2{
+    align-self:center;
+   
+}
+.box3{
+    align-self: flex-end;
+}

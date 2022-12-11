@@ -1,0 +1,33 @@
+/* *{  
+    color:red; 
+} */
+header{
+    background-color: #f0ebeb;
+}
+body{
+    font-family: arial;
+}
+section.my-articles /* section with class my-articles*/
+{
+   background-color: #f2e9e9e9;
+}
+/*  descendant selector* / */
+ header p{
+
+    color:red;
+}
+li a{
+    color: #ababab;
+}
+/*section ka direct h2*/
+section.my-articles > h2
+{
+    color: green;
+}
+/*adjacent selector  h2 ke jo adjacent paragraph*/
+h2 +p{
+    color: orange;
+}
+ul+p{
+    color:rebeccapurple;
+}

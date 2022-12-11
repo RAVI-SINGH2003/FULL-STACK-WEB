@@ -1,0 +1,36 @@
+/* if p is the first child of his parent color it*/
+/* p:first-child{
+    color:red;
+}
+*/
+
+/*parent ke first p tag ko color*/
+/*
+p:first-of-type
+{
+    color:green;
+} */
+
+/* if p is the last child of his parent color it*/
+/* p:last-child{
+
+    color:blue;
+} */
+
+
+/*parent ke last p tag ko color*/
+/* p:last-of-type   
+{ 
+    color: crimson;
+} */
+/* if p tag 2n child of his parent n=0,1,2,*/
+/* p:nth-child(2n+1) 
+{
+    color: green;
+} */
+
+/*parent ke 2nd para graph of ko red;*/
+/* p:nth-of-type(2n)
+{
+    color: red;
+} */

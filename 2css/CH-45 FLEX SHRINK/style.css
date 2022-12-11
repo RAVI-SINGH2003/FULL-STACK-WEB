@@ -1,0 +1,29 @@
+/*flex : is  a  shothand property of flex items flex: flex-grow flex-shink flex-basis */
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border:10px solid red;
+    display: flex;
+    max-width: 1200px; 
+    flex-wrap: wrap; 
+}
+.container .box{
+   border: 2px solid green;
+   background-color:lightgreen;
+   /*if i want to do width of all boxes equal*/
+   flex : 1 300px;
+}
+/* .box1{
+    flex-shrink: 1;
+}
+.box2{
+    flex-shrink:2;
+  
+}
+.box3{
+    flex-shrink: 3;
+} */

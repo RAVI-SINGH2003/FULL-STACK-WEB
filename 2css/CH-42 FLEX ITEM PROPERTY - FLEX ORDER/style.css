@@ -1,0 +1,30 @@
+/*ORDER is a property of flex items TO DECIDE ORDER */
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border:10px solid red;
+    display: flex;
+    height:600px;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.container .box{
+   border: 2px solid green;
+   background-color:lightgreen;
+   width: 400px;
+
+}
+.box1{
+  order:2;
+}
+.box2{
+    
+   order:3;
+}
+.box3{
+    order:1;
+}

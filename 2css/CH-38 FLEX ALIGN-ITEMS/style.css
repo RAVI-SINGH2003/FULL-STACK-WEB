@@ -1,0 +1,38 @@
+/* WE HAVE PROPERTIES FOR BOTH FLEX CONTAINER AND FLEX ITEMS
+ALIGN ITEMS IS THE PROPERTY OF FLEX CONTAINER works on cross axis*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.box-wrapper{
+    border: 10px solid #222;
+    height: 700px;
+    display: flex;
+    /* align-items: stretch; by- default ----->1 */
+    /* align-items: flex-start; -------->2 */
+    /* align-items: flex-end; ----->3*/
+    /* align-items: center; ------>4*/
+    flex-direction: column;  /*---->5*/
+    /* align-items: flex-start ; */ /*---->6*/
+    /* align-items: flex-end ; */ /*---->7*/
+    align-items: center ;     /*---->8*/
+}
+.box{
+    border: 1px solid #666;
+    width:300px;
+}
+.box-1{
+    background-color: lightblue;
+}
+.box-2{
+    background-color: lightcoral;
+}
+.box-3{
+    background-color: lightgrey;
+}
+.box-4{
+    background-color: lightsalmon;
+}
+.box-5{
+    background-color: rgb(217, 173, 230);
+}

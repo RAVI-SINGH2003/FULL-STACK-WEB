@@ -1,0 +1,16 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* transition-property: background;
+    transition-duration: 500ms;  use in buttons
+    transition-timing-function: ease-out; */
+    /* transition : transition-property transition duration transition-timing-function */
+    /* transition: background 1s ease-in-out, width 1s ease-in-out,height 2s ease-in; */
+    transition:all 1s ease-in-out;
+}
+.box:hover{
+    background-color: orange;
+    width:300px;
+    height:500px;
+}

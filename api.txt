@@ -1,0 +1,8 @@
+//openweather -api
+api key = 587dd54ad6559eba772989fcf060992d
+https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=587dd54ad6559eba772989fcf060992d
+
+
+//exchangerate-api
+Your API Key: d077a638cae5a2875d752a6d
+Example Request: https://v6.exchangerate-api.com/v6/d077a638cae5a2875d752a6d/latest/USD

@@ -1,0 +1,16 @@
+/*content property has to be used both content*/
+.cool::before{
+    border: 2px dotted red;
+    display: block;
+    content: 'hello ';
+}
+.cool::after{
+    border: 2px dotted red;
+    display: block;
+    content: 'hello ';
+}
+.main-heading::before{
+    color:red;
+    content: 'hello ';
+}
+/* before and after can not be used wth img video input etc replaced tag*/

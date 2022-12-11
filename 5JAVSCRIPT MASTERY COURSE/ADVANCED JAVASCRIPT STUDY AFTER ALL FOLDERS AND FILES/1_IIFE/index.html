@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>About iife (Immediately invoked function expression)</h1>
+    <p>An iife is a javascript function that runs as soo as it is defined</p>
+    <p>It is a design pattern which is also known as self executing anonymous function and contains two major parts</p>
+    <p>The first is the anonymous function with lexical scope enclosed within the Grouping operator (). This prevents
+        accessing variables within IIFE idiom as well as polluting the global scope</p>
+    <p>The second part creates the immediately invoked function expression() through which the javascript engine will
+        directly interpret the function</p>
+
+    <script>
+        // example of iife
+        //author has e=become private now
+        // (function () {
+        //     var author = "Ravi";
+        //     console.log('Author name is '+ author);
+        // })();
+        //author not defined
+        // console.log(author)
+
+        //example 2 of iife 
+        (function (author) {
+
+            console.log('Author name is '+ author);
+        })("Ravi");
+
+
+    </script>
+</body>
+
+</html>

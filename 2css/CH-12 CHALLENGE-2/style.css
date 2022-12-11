@@ -1,0 +1,24 @@
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+.container{
+    /* border: 2px solid red; */
+    margin: 0px auto;
+    width:1200px;
+}
+.main-heading{
+
+    background-color: #cdcdcd;
+    text-align: center;
+     padding: 10px 0px;
+}
+section.about-me , section.about-lily{
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 5px 20px;
+
+}
+ div h2{
+    text-transform: uppercase;
+}

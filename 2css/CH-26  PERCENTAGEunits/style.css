@@ -1,0 +1,26 @@
+.div1{
+    border: 2px solid red;
+    font-size: 10px;
+
+}
+.para1{
+   border:1px solid green ;
+   font-size: 200%;  /*200% of its parent that is div s0 200% of 10px =20px */
+   width: 50%;
+   background-color: lightblue;
+   margin: 4px auto;  /*or  /*margin-left: 25%;*//*to center afetr setting width 50%*/ 
+   text-align:center;
+}
+.div2{
+    margin-top:20px;
+    font-size: 10px;
+    border:2px solid green;
+    width:50%;
+}
+.para2{
+    font-size:200%;
+    border: 2px solid red;
+    width:50%;
+    margin: 2px auto;
+    text-align:center;
+}

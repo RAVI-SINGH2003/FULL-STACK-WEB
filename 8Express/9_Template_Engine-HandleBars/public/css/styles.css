@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+}
+.btn-style{
+border:none;
+outline:none;
+padding:0.7em 1.5em;
+border-radius: 8px;
+letter-spacing: 1px;
+margin-top: 10px;
+}
+
+/* ########################### navbar-styling ############################ */
+#top-nav{
+    background-color: #daac00;
+    padding: 1% 8%;
+}
+#top-nav img{
+    width:115px
+}
+.navbar .nav-item .nav-link{
+    color: white;
+    padding-left:3rem;
+    font-size: 1.1rem;  
+}
+#searchbox{
+    background-color: #fcc302;
+    border: 0px;
+    outline: none;
+    border-radius:0px;
+    color: white;
+    margin-right: 0px;
+    position: relative;
+    left:10px;    
+    box-shadow: 5px 5px 5px #5c5a5a3c;
+}
+#searchbox::placeholder{
+    color: rgba(255, 255, 255, 0.667);
+}
+#searchbtn{
+    border-radius: 0px;
+    border: none;
+    background-color: #00bec9;
+    box-shadow: 5px 5px 5px #5c5a5a3c;
+    color: white;
+}
+
+
+/* ############################# banner styling #################### */
+#banner{
+    background-color:#fcc302; 
+    padding:2rem 0.8rem 4rem 1rem;
+}
+#bannertext{
+    margin-top: 5%;
+}
+
+#bannertext h1{
+    font-weight:600;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+#bannertext  p{
+    font-size: 1.3rem;
+}
+#contact-btn{
+    background-color: #00bec9;
+    border: 2px solid  #00bec9;
+    color: #fff;
+    margin-right: 1rem;
+}
+#our-service-btn{
+color:white;
+border:3px solid #fff;
+background-color: transparent;
+padding-top:0.6em;
+padding-bottom: 0.6em;
+letter-spacing: 1px;
+}
+
+/* ###################### services #################### */
+#service{
+    /* border: 2px solid red; */
+
+   padding-bottom: 2rem;
+}
+#servicetext{
+    padding-top:6rem;
+}
+#servicetext h1{
+    font-weight: 600;
+}
+#servicetext p{
+font-size: 1.2rem;
+}
+#serviceimg{
+    padding-top:5rem;
+}
+#serviceimg img{
+    border-radius: 10px;
+
+}
+#box{
+    width:150px;
+    height:150px;
+    background-color:#fcc302;
+    position:relative;
+    bottom: 132px;
+    right: 22px;
+    z-index: -1;
+}
+#service-btn{
+    background-color:#fcc302; 
+    color: #fff;
+    margin-right: 1rem;
+    margin-top: 10px;
+    border: 2px solid #fcc302; 
+}
+
+/* ########################### counter ######################## */
+#counter{
+ background:linear-gradient(#fcc202ef ,#fcc202af ),url('/images/counter.jpeg');
+ background-repeat: no-repeat;
+ background-size: cover;
+  padding: 4rem 1rem;
+}
+.counteritem{
+    margin-bottom:3rem;
+}
+#counter i{
+    font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+
+/* ################## blogs section ########################### */
+#blog-section{
+    padding:3rem 0 5rem 0;
+}
+#blog-title{
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+#blog-p{
+    font-size: 1.3rem;
+    
+}
+.blog-item{
+    margin-top: 2.5rem;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.153);
+    padding: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    transition: transform 0.6s ease-in;
+}
+.blog-item:hover{
+    
+    transform: scale(1.008,1.008);
+}
+.blog-item h4{
+margin-top: 1rem;
+font-weight: 600;
+color: rgb(98, 94, 94);
+
+}
+.blog-item p:first-of-type , .blog-item a{
+    color: #00bec9;
+    font-weight:600;
+}
+
+
+/* ###################footer ############################ */
+#footer{
+    background-color: rgba(7, 6, 6, 0.638);
+    color: white;
+    padding: 3rem 0;
+    /* text-align: center; */
+}
+#footer-search{
+    background-color: #fcc302;
+    border: 0px;
+    outline: none;
+    color: white;
+    box-shadow: 5px 5px 5px #5c5a5a3c;
+    padding: 15px;
+    max-width:250px;
+    width: 100%;
+    position: relative;
+    left:10px;
+}
+#footer-btn{
+    border: none;
+    background-color: #00bec9;
+    color: white;
+    padding: 15px 30px;
+}
+.social-icons{
+    margin-top: 1rem;
+}
+#footer .social-icons i{
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+}
+@media only screen and (min-width : 765px ) and (max-width : 1140px)
+{
+    #footer-search{
+        max-width: 165px;
+    }
+    #footer-btn{
+        padding: 15px 20px;
+    }
+}
+@media only screen and (max-width:1000px){
+ #serviceimg{
+    margin-top: 3rem;
+ }
+}
+
+@media only screen and (max-width:870px){
+    .navbar .nav-item .nav-link{
+        padding-left: 2rem;
+    }
+    #searchbox{
+      margin-left: 1.4rem;
+      
+    }
+    #top-nav{
+       padding: 2% 2% 5% 2% ;
+    }
+    /* ##########banner ################# */
+     #bannertext h1{
+        font-size: 3rem;
+     }
+
+     /* #####service ############# */
+     #servive
+     #servicetext{
+        padding-top: 5rem;
+     }
+     #serviceimg{
+        padding-top:5rem;
+        margin-top: 0;
+     }
+     /* ########## service ########### */
+     #counter i{
+        font-size: 3rem;
+     }
+
+}
+
+

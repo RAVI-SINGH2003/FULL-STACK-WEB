@@ -1,0 +1,37 @@
+.box{
+    width:100px;
+    height:100px;
+    background-color: red;
+    animation-name:change-bg-color;
+    animation-duration: 5s;
+    animation-delay:3s;
+    /* animation-iteration-count:3; */
+    animation-fill-mode:forwards; /* agar chahta hai animation se color badalkar orange hi reh jaye*/
+
+
+}
+@keyframes change-bg-color{
+    from{
+          background-color: red;
+    }
+    to{
+          background-color: orange;
+    }
+}
+.box2{
+    width:15px;
+    height: 10px;
+    background-color: blue;
+    animation-name: grow-width;
+    animation-duration:4s;
+    animation-fill-mode: forwards; /*matlab width animation se badh kar fix hojaegi*/
+    animation-direction: reverse;
+}
+@keyframes grow-width {
+    from{
+        width:3px;
+    }
+    to{
+        width:300px;
+    }
+}

@@ -1,0 +1,12 @@
+p::first-letter{
+    color:blue;
+    font-size: 22px;
+}
+p::first-line{
+  font-weight: bold;
+}
+/* if p not mentiones sab elements ke sath ye hoga*/
+p::selection{
+    background-color: green;
+    color:white;
+}

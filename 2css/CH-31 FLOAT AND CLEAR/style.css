@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box
+}
+.container{
+  border: 10px solid red;
+}
+.first{
+    width:25%;
+    float:left;
+    background-color: antiquewhite;
+    padding:20px;
+}
+.second{
+    width:25%;
+    float:left;
+    background-color: lightcoral;
+    padding:20px;
+}
+.third{
+    width:25%;
+    float:left;
+    background-color: lightblue;
+    padding:20px;
+}
+.fourth{
+    width:25%;
+    float:left;
+    background-color: lightgreen;
+    padding:20px;
+
+}
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* another way to clear floats */
+/* .clear-fix{
+    clear :both;
+} */

@@ -1,0 +1,23 @@
+/*rem means relative to rootl elemnt that is html element */
+/*trick used by developers they set html font size from 16px (by default) to 10px or 62.5%  */
+
+html{
+/* font-size: 10px; */
+font-size: 62.5%; /*use 62.5% = 10px but use 62.5% it makes webiste responsive */
+/* 16 px = 100% * /;
+/* 10px = 100/16*10 = 62.5% */
+}
+.box1{
+    font-size: 2rem;
+}
+.text-content
+{
+    font-size :3rem; /*30px*/
+    border : 1rem solid red;
+    margin: 0.5 rem; /*5 px margin*/
+    padding:2rem; /*20 px margin*/
+}
+::selection{
+   background-color: green;
+   color:white;
+}

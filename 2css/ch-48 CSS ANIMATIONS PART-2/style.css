@@ -1,0 +1,46 @@
+.box{
+    width:100px;
+    height:100px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name:move-around;
+    animation-duration :1s;
+    position: relative;
+    /* animation-iteration-count:infinite; */
+    animation-iteration-count:5;
+    /* animation-fill-mode: forwards; */
+}
+@keyframes move-around {
+  0%{
+    top:0;
+    left:0;
+    background-color: lightblue;
+  }
+  10%{
+    background-color: red;
+  }
+  25%{
+    top:0;
+    left:300px;
+    background-color: lightgreen;
+  }
+  50%{
+    top:300px;
+    left:300px;
+   background-color: lightsalmon;
+
+  }
+  60%{
+    background-color: red;
+  }
+  75%{
+    top:300px;
+    left:0;
+    background-color: blue;
+  }
+  100%{
+    top:0;
+    left:0;
+    background-color: aqua;
+  }
+}

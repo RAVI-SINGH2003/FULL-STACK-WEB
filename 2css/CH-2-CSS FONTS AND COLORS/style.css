@@ -1,0 +1,29 @@
+/* SANS SERIF FONT IS MOSTLY USED */
+
+/* body{
+    font-family:Arial, Helvetica, sans-serif;
+} */
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+
+    /* color:rgb(28, 186, 204); */
+
+    /* color:#9fdb27; */ /*hex code 2 bits for red green blue*/
+
+    /* renge of bit = 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+    color: #ffffff; /*white*/
+    /*color: #000000;*/ /*black*/
+    /*color: #9a9a9a;*/ /*grey*/
+    background-color: black;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+
+}

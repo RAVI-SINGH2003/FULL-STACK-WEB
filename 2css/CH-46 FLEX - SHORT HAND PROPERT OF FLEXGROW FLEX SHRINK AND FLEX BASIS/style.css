@@ -1,0 +1,29 @@
+/*flex-shrink  is a property of flex items to decode the initial length along main axis  */
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border:10px solid red;
+    display: flex;
+    max-width: 1200px;  
+}
+.container .box{
+   border: 2px solid green;
+   background-color:lightgreen;
+   flex-basis : 600px; 
+  
+
+}
+.box1{
+    flex-shrink: 1;
+}
+.box2{
+    flex-shrink:2;
+  
+}
+.box3{
+    flex-shrink: 3;
+}

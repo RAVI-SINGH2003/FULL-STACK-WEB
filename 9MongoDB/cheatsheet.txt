@@ -1,0 +1,239 @@
+======>>>>>> MONGO DB BASIC TERMINOLOGY <<<<<=======
+TABLES = COLLECTIONS
+ROWS = DOCUMENT
+COLUMN = FIELDS
+
+---------------
+1.view databases
+----------------
+
+show dbs
+
+------------------------------------
+2.create a new or switch to databases
+-------------------------------------
+
+use database1
+
+-----------------
+3.Delete database
+-----------------
+
+db.dropDatabase()
+
+-----------------
+4.View current DB
+-----------------
+
+db
+
+--------------------
+5.Create Collections
+-------------------
+
+db.createCollection('collection_name')
+
+
+-----------------
+6.Show Collections
+------------------
+
+show collections
+
+-----------------
+7.Drop Collection
+-------------------
+
+db.collection_name.drop();
+
+//===================== > MongoDb commands for Rows <======================
+
+//---------------------- INSERT COMMANDS-----------------------
+
+-------------
+1.Insert Rows
+-------------
+
+db.comments.insertOne({
+    'name' :'Ravi',
+    'lang' : 'JavaScript',
+    'member_since' :5
+
+})
+
+-----------------
+2.InsertManyRows
+-----------------
+
+db.content.insertMany([
+{ 'title': 'my second post', 
+  'description': 'festivals'
+},
+{ 'title': 'my third post',
+  'desciption': 'about education system' 
+}
+])
+
+//--------------------------- READ OR FIND COMMANDS-----------------------------
+
+-------------------------------
+3.show first Row in a Collection
+--------------------------------
+
+ db.content.findOne()
+
+-------------------------------
+4.show all Rows in a Collection
+--------------------------------
+
+db.<collection_name>.find()
+
+----------------------------------------------
+5.show all Rows in a Collection(prettified)
+----------------------------------------------
+
+db.<collection_name>.find().pretty()
+
+
+----------------------------------------
+6.find in a MongoDb database Collection
+----------------------------------------
+
+db.comments.find({'lang' :'JavaScript'})
+or 
+db.comments.find({'lang':'JavaScript' ,'name' :'Ravi'})
+
+------------------------------------
+7.Limit the number of rows in output
+-------------------------------------
+
+db.comments.find().limit(2)
+or
+db.comments.find({'name' :'rahul'}).limit(2)
+
+-------------------------------------------------------------
+8.findone same as db.comments.find({'name' :'rahul'}).limit(1)
+-------------------------------------------------------------
+
+db.comments.findOne({'name' :'rahul'})
+
+-----------------------------------------------
+9. Count no of document(rows) in the collection
+-----------------------------------------------
+
+db.comments.countDocuments();
+
+-----------------------------------
+10.Count number of rows in the output
+-----------------------------------
+
+db.comments.find().count()
+or
+db.comments.find({'name' :'rahul'}).limit(1).count() output =1
+
+----------------------------------------------------------------
+11.sort according to field member_since in comments Collection
+--------------------------------------------------------------
+
+db.comments.find().sort({member_since :1})
+
+//---------------------------- UPDATE COMMANDS ---------------------------------
+
+-----------------------------------------------------------
+12.Update fields of 1 row in a collection where name is Ravi
+------------------------------------------------------------
+
+// updateOne and only update is same
+
+db.comments.updateOne({'name' :'Ravi'},
+{
+'name' :'Ravi Singh',
+'lang' :'HTML and CSS',
+ 'member_since' :5
+})
+
+//here you can modify multiple fieds as shown above
+
+----------------------------------------------------------------
+13.Update fields of many rows in a collection where name is Ravi
+-----------------------------------------------------------------
+
+ db.comments.updateMany({ 'name': 'Ravi' }, {$set :{ 'name': 'Ravi Singh', 'lang': 'HTML', 'member_since': 5 }})
+
+-----------------
+14. upsert :true
+-----------------
+
+ db.content.updateOne({ 'title': 'my new blog' }, { $set: { 'title': 'my very first blog' } }, { upsert: true })
+
+//here if there is no blog with title my new blog then it will create a row with title my new blog
+
+
+//---------------------------- DELETE COMMANDS ---------------------------------
+
+-----------------------------------------------------------
+14.Delete  1 row in a collection where name is Ravi
+------------------------------------------------------------
+
+db.comments.deleteOne({'name' :'Ravi'})
+
+
+----------------------------------------------------------------
+15.Delete  many rows in a collection where name is Ravi
+-----------------------------------------------------------------
+
+ db.comments.deleteMany({'name' :'Ravi'})
+
+
+-------------------------------------
+16.Delete  first row in a collection 
+-------------------------------------
+
+db.comments.deleteOne({})
+
+------------------------------------
+17.Delete  all rows in a collection
+-------------------------------------
+
+ db.comments.deleteMany({})
+
+//------------------- COMPLEX COMMANDS-----------------------
+
+------------------------------------------------------------
+18.Increment member field value by2 in row where name is ravi
+-------------------------------------------------------------
+
+ db.comments.updateOne({'name' :'ravi'},{$inc :{'member' :10}})
+
+
+------------------------------------------------------------
+19.Renaming member field to member_since in row where name is ravi
+-------------------------------------------------------------
+
+
+db.comments.updateOne({'name' :'ravi'},{$rename :{'member' :'member_since'}})
+
+
+------------------------------------------------------------
+20.finding rows in a collection where member field value is less than 5
+-------------------------------------------------------------
+
+ db.comments.find({'member': {$lt :5}})
+
+//----------------------------------------------------------------
+
+stock> db.product.find({price : {$lte : 100}},{name :1})
+
+[ { _id: ObjectId("630cb8a21d6ee86e45932a23"), name: 'colors' } ]
+--------------------------------------------------------------------------
+
+stock> db.product.find({price : {$lte : 100}},{name :1,_id:0})
+
+[ { name: 'colors' } ]
+----------------------------------------------------------
+
+
+
+
+
+

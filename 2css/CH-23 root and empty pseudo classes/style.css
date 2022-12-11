@@ -1,0 +1,31 @@
+/*the elements which are not p blue them but then body will also become blue
+therefore p will also become blue*/
+/* :not(p){
+    color: blue;
+} */
+
+/*all elements inside body which are not p tags red them */
+/*body and :not (p) ke beech me space hona chhaiye then it will work*/
+/* body :not(p){
+    color: red;
+} */
+/* body :not(.fancy)
+{
+    color:#ddd;
+} */
+/* div:empty{
+    background-color: #222;
+    border: 2px solid red;
+    width:100px;
+    height:100px;
+} */
+/*use root or html tag to modiy everthing inside html tag use any*/
+/* :root
+{
+    background-color: yellow;
+    color:white;
+} */
+body{
+background-color: yellow;
+
+}

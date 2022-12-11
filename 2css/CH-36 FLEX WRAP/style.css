@@ -1,0 +1,41 @@
+/* WE HAVE PROPERTIES FOR BOTH FLEX CONTAINER AND FLEX ITEMS
+FLEX WRAP IS THE PROPERTY OF FLEX CONTAINER*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.box-wrapper{
+    border: 10px solid #222;
+    display: flex;
+    /* flex-wrap:wrap;--------------->1 */
+    /* flex-wrap:wrap-reverse; ----------->1*/
+    /* height: 800px; ------> 2 */ 
+    /* height:400px;  --------->3*/
+    /* flex-direction: column; ----------->3 */
+    /* flex-wrap: wrap-reverse; ---------->3*/
+    
+}
+
+.box
+{
+    border: 1px solid #666;
+    /* width:500px; ------------->1*/
+    /* height:300px; ------->2*/ 
+    /* width: 400px;   ------------->3 */
+ 
+}
+.box-1{
+    background-color: lightblue;
+}
+.box-2{
+    background-color: lightcoral;
+}
+.box-3{
+    background-color: lightgrey;
+}
+.box-4{
+    background-color: lightsalmon;
+}
+.box-5{
+    background-color: rgb(217, 173, 230);
+}

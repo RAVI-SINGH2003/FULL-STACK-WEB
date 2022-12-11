@@ -1,0 +1,38 @@
+/*flex-basis  is a property of flex items to decode the initial length along main axis  */
+/*when flex-direextion is row then flex-basis is length towrds main axis that is from left to right so flex basis will act as width in this case*/
+/*when flex-direextion is column then flex-basis give is the length towards main axis that is from top to bottom so flex basis will act as height in this case*/
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border:10px solid red;
+    display: flex;
+    /*flex-direction: row;*/ /*-------->1*/
+    /* flex-wrap: wrap; */  /*-------->1*/
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:600px ;
+}
+.container .box{
+   border: 2px solid green;
+   background-color:lightgreen;
+ /*  flex-basis: 500px;*/ /*-------->1 here flex-basis act as width*/
+   /* width: 300px;  ------>1  this will not be applied as flex-width has higher preference */
+   width: 400px;
+   flex-basis: 1000px ;  /* flex dirextion is column so flex-basis will act as a height*/
+   height: 200px;         /* this height will not be applied because of flex-basis*/
+
+}
+/* .box1{
+ 
+}
+.box2{
+    
+  
+}
+.box3{
+ 
+} */

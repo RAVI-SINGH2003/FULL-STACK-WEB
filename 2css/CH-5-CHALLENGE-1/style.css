@@ -1,0 +1,13 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-dark{
+    background-color:#cdcdcd;
+}
+.head-color{
+    color:cornflowerblue;
+}
+.highlight{
+    background-color: aqua;
+}

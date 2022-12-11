@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+} 
+h1{
+    margin:10px;
+}
+p{
+
+    margin:8px;
+}

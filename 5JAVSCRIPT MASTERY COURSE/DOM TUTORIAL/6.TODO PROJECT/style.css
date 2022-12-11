@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+    box-sizing : border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    margin-left:0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.container{
+    max-width : 1200px;
+    width : 90%;
+    margin:auto;
+
+}
+.btn{
+    display: inline-block;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+.bg-dark{
+    background-color:black;
+    color: green;
+}
+/* #################### styling begin here ###################### */
+.header{
+    min-height : 60vh;
+    background: url('./images/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color : #fff;
+    position: relative;
+}
+
+.nav{
+    min-height : 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    width : 40%;
+    display: flex;
+    justify-content:space-between ;
+}
+.headline{
+    position:absolute;
+    top : 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn-headline{
+    padding : 1rem 2rem;
+    font-size:1rem;
+    margin-top:1rem;
+    font-weight:600;
+}
+.section-todo{
+    margin-top:5rem;
+    text-align: center;
+
+}
+
+.form-todo{
+    /* border: 2px solid red; */
+    min-height:5vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+
+}
+.form-todo input{
+  min-height:100%;
+
+}
+.form-todo input[type="text"]{
+    width:78%;padding: 0.8em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.form-todo input[type="submit"]{
+    width:20%;
+    background: rgb(44,55,63);
+    color: white;
+    font-weight: bold;
+}
+
+.todo-list{
+    text-align: left;
+    font-size:1.2rem;
+}
+.todo-list li{
+    padding:0.7rem;
+    background:#444 ;
+    color: rgb(210, 196, 196);
+    margin-top:1rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btn{
+   padding:1rem;
+   font-size:1rem;
+   font-weight: bolder;
+   cursor: pointer;
+
+}
+.section-signup{
+    margin:5rem auto;
+    text-align: center;
+    background : rgb(240,240,240);
+    border-radius:10px;
+    padding:1rem;
+
+}
+.signup-form{
+    max-width:800px;
+    width:95%;
+    text-align: left;
+    margin:auto;
+
+}
+.signup-form label{
+display: block;
+width:100%;
+
+
+}
+.signup-form input{
+display: block;
+width: 100%;
+padding:0.5rem;
+
+}
+.form-group{
+    margin-top: 1rem;
+}
+.signup-form textarea{
+    width: 100%;
+
+}
+.signup-btn{
+background: rgb(44,55,63);
+color:white;
+padding:1rem 2rem;
+display: block;
+margin:auto;
+margin-top: 1rem;
+}

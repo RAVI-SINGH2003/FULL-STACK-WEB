@@ -1,0 +1,42 @@
+/* WE HAVE PROPERTIES FOR BOTH FLEX CONTAINER AND FLEX ITEMS
+JUSTIFY CONTENT IS THE PROPERTY OF FLEX CONTAINER  works on main axis*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.box-wrapper{
+    border: 10px solid #222;
+    display: flex;
+    /*justify-content: flex-start;/* /* aliign itms along main axis by default   */
+    /* justify-content: flex-end  */
+    /* justify-content: center; */
+    /* justify-content: space-between; */ /*no space before box1 and after box 5*/
+    /* justify-content: space-around; now space before box1 and after box 5 */
+    
+     /* flex-direction: row-reverse; ---->2*/
+     /* justify-content:flex-end; ---->2*/
+
+     /* flex-direction: column; ---->3*/
+     /* height:900px; ------------>3*/
+     /* justify-content: flex-end;---------->3 */
+    
+}
+.box{
+    border: 1px solid #666;
+    width:300px;
+}
+.box-1{
+    background-color: lightblue;
+}
+.box-2{
+    background-color: lightcoral;
+}
+.box-3{
+    background-color: lightgrey;
+}
+.box-4{
+    background-color: lightsalmon;
+}
+.box-5{
+    background-color: rgb(217, 173, 230);
+}

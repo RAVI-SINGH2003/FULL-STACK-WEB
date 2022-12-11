@@ -1,0 +1,10 @@
+a{
+    color: #fff;
+    text-decoration: none;
+}
+button{
+    margin-right: 5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}

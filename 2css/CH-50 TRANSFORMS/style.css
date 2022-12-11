@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    width:100px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    padding-top:30px;
+    transition: transform 1s ease-in-out;
+    margin: 100px auto;
+    transform-origin: top left;
+}
+.box:hover{
+    /* transform:rotate(360deg); */
+    /* transform:rotate(-20deg); */
+    /* transform: scale(2,1.5); */
+    /* transform: translate(50px,0px); */
+    /* transform: translate(50%,-50%); */
+    /* transform:skew(20deg ,10deg); */
+    transform:rotate(360deg);
+    
+
+}

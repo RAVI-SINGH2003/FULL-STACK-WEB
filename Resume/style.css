@@ -1,0 +1,318 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* ################utility classes ##################### */
+.container{
+    max-width:1350px;
+    width: 90%;
+    margin:0 auto;
+}
+.btn{
+    display: inline-block;
+    padding:1em 1.5em;
+    text-decoration: none;
+    border-radius:50px;
+    cursor:pointer;
+    outline:none;
+    margin-top:1em;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    background-color: rgba(113, 240, 210, 0.584);
+    border:2px solid #ddd;
+}
+.btn-primary{
+    font-size: 1.4rem;    
+}
+.btn-form{
+    display: block;
+    width:100%;
+    padding:1rem;
+    border-radius: 0;
+    border:2px solid rgba(221, 221, 221, 0.285);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+    
+}
+
+
+/* ####################### navigation bar styling ############## */
+/* for desktop mode*/
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+.navbar{
+    /* border:2px solid red; */
+    position:sticky;
+    top:0;
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px #aaa;
+   
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem;
+    flex-wrap: wrap;
+    width:100%
+}
+.nav-items{
+ display: flex;
+ /* border: 2px solid red; */
+}
+.nav-item{
+    padding:0.8rem 1.5rem; 
+    font-size:1.8rem;
+    
+
+}
+.navbar .logo{
+font-size:2.2rem;
+margin: auto 0 auto 2rem;
+font-weight: 800;
+
+}
+.navbar a{
+    color:#333;;
+    font-weight: 500;
+
+}
+
+/* ################### background -styling ##################### */
+
+.about-me-section{
+/* border:2px solid green; */
+background : linear-gradient(rgba(230, 226, 226, 0.241) ,rgba(255, 249, 249, 0.252)),url('images/background.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height:90vh;
+
+}
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+
+    align-items:center;
+    height:100%;
+ 
+}
+.about-me-section .logo {
+  border-radius: 50%;
+  flex:1 1 50%;
+
+}
+.about-me-section .logo img{
+    display: block;
+    max-width:100%;
+    /* width:100px; */
+    max-height: 300px;
+    border-radius: 50%;
+    margin:auto;
+    /* border: 2px solid #7e7a7a; */
+    box-shadow: 3px 5px 10px 5px #7d7b7b;
+}
+.about-me-text{
+    flex:1 1 50%;
+    text-align:left;
+}
+.about-me-text .about-me-heading{
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.about-me-heading::after{
+
+    content:"";
+    display: block;
+    border:1.8px solid white;
+    background-color: white;
+    width:40%;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    
+}
+.about-me-text h2{
+    font-size:4.5rem;
+    font-weight:600;
+}
+.about-me-text .line1{
+    margin-bottom: 1rem;
+}
+.about-me-text p{
+    font-size:1.85rem;
+    font-weight:500;
+    color:#333;
+
+}
+
+/* ################# skills -section-styling ############################# */
+.my-skills-section{
+
+  padding:5rem 3rem;
+  background-color:rgba(184, 244, 244, 0.384);
+ 
+}
+.my-skills-container{
+    display: flex;
+    justify-content: space-around;
+}
+.my-skills-section .my-skills-main-heading{
+ text-align: center;
+ font-size: 4rem;
+ font-weight: 600;
+ margin-bottom: 3rem;
+ text-transform: uppercase;
+}
+
+
+.my-skills-main-heading::after{
+    content:"";
+    display: block;
+    border:2px solid rgb(245, 168, 181);
+    background-color:rgb(245, 168, 181);
+    width:40%;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    margin:auto
+}
+
+.my-skills-section h2{
+    font-size: 3.1rem;
+    font-weight: 500;
+    border-bottom:3px solid rgb(245, 168, 181);;
+}
+
+.my-skills-section li{
+    font-size:1.9rem;
+    margin:2rem;
+    list-style-image: url('./images/checked1.png'); */
+   
+
+}
+/* ############# projects section styling ################# */
+.projects-section{
+    background-color: rgba(252, 231, 234, 0.389);
+    padding: 5rem 0;
+}
+.project-main-heading{
+    text-align: center;
+    font-size:4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.project-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+}
+
+.project-item{
+   display: flex;
+    flex: 1 1 50%;
+    align-items: center;
+    padding:1rem;
+}
+.project-logo img{
+    display: block;
+    width:240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit:cover;
+    object-position: center;
+   border: 2px solid #ccc;
+}
+.project-text{
+    margin-left:3rem;  
+}
+.project-text h2{
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #333;
+}
+.project-text p{
+    font-size: 1.6rem;
+    color:#222;
+
+}
+/* ######################### contact-section-styling############### */
+.contact{
+    padding:5rem 0
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.contact-main-heading{
+    text-align: center;
+    font-size:4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.social-icons{
+    flex-basis:1 1 50%;
+    margin-bottom: 8rem;
+}
+.social-icons .fa-brands{
+    font-size: 6rem; 
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    padding: 1rem;   
+}
+.social-icon-text{
+    margin-left: 3rem;
+}
+.social-icon-text h2{
+    font-size: 3rem;
+   
+}
+.social-icon-text p,.social-icon-text a{
+  font-size: 1.8rem;
+}
+.form{
+    flex-basis:1 1 50%;
+}
+.form input ,.form textarea{
+    display: block;
+    width:100%;
+    font-size: 2rem;
+    padding:0.5rem
+}
+.form h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.form-group label{
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+.form .form-group{
+   margin: 1rem 0;
+}

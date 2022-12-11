@@ -1,0 +1,12 @@
+html structure
+html title ,meta tags
+HTML headings ,paragraphs ,line breaks
+links
+images
+tables
+html forms
+id ad classes
+style tags
+div and span
+html semantic tags
+html entities

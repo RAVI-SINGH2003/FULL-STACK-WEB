@@ -1,0 +1,17 @@
+/* inline >id >class >element
+h1{
+    color:green !important;
+} */
+/* #h1id{
+    color:blue ;
+} */
+h1.heading{  /*this becomes more specific than .h1class*/
+    color:cadetblue;
+}
+.h1class{
+    color:aqua;
+}
+
+
+
+

@@ -1,0 +1,17 @@
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+/* UTILITY CLASSES */
+.text-white{
+color:white;
+}
+.text-red{
+    color:red;
+}
+.text-green{
+    color: green;
+}
+
+.bg-dark{
+    background-color: black;
+}

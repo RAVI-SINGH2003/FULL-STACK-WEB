@@ -1,0 +1,30 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding:0px 50px; /*body me paddding dede sabkhuch beech me lane ke liye instead of creating container phir uska width set karke margin auto karne ke bajaye*/
+}
+header{
+    background-color: #cdcdcd;
+  
+}
+ 
+nav ul{
+    text-align: center;
+    margin-left:0px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    border-bottom: 2px solid black;;
+}
+article{
+    margin-top:50px;
+}
+article h2{
+    border-bottom: 2px solid #ababab;
+}

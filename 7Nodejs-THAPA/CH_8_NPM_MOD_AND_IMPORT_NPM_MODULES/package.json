@@ -1,0 +1,15 @@
+{
+  "name": "ch_8_npm_mod",
+  "version": "1.0.0",
+  "description": "ravi learning npm_mod",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravi Singh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "validator": "^13.7.0"
+  }
+}

@@ -1,0 +1,37 @@
+/* WE HAVE PROPERTIES FOR BOTH FLEX CONTAINER AND FLEX ITEMS
+ALIGN CONTENT IS THE PROPERTY OF FLEX CONTAINER wused when flex items is in multiple lines s->it align alon cross axis*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.box-wrapper{
+    border: 10px solid #222;
+    height:400px ;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+   
+    align-content: space-between;
+    justify-content: space-evenly;
+    
+}
+.box{
+    border: 1px solid #666;
+}
+.box-1{
+    background-color: lightblue;
+}
+.box-2{
+    background-color: lightcoral;
+}
+.box-3{
+    background-color: lightgrey;
+}
+.box-4{
+    background-color: lightsalmon;
+}
+.box-5{
+    background-color: rgb(217, 173, 230);
+}

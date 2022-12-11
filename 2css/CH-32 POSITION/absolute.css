@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container
+{
+   width:800px; 
+   border: 8px solid green;
+   margin-top:50px;
+   margin-bottom : 50px;
+}
+.container h1{
+    border: 4px solid red;
+    background:lightcoral;
+    position: absolute; /*absolute  matlab apne relative parent ke respect me move karega  by default relative parent(position :relative ) hota hai body to body ke respect me move karega aur document flow se bahar aajaega matlab absolute likhte hi ye apni jagah chhod dega baki elemnets jo iske bad honge wo iski jagah lelenge */
+    top:0px;
+    left:100px;
+    z-index:-1 ; /*kon kike upar ye decide karga*/
+}
+.container h3{
+    background-color: black;
+    color:#fff;
+}
+.container p{
+    
+  border: 4px solid purple;
+  background-color: rgba(255, 0, 0, 0.959), green, blue);
+
+}

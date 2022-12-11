@@ -1,0 +1,17 @@
+/* in case of font-size property em is relative to parent*/
+/*baki properties jaise border width me font size ke relative kam karega*/
+.heading-1{
+    font-size : 3em; /* 3 *16  size of parent - html * = 48px */
+    border: 2em solid black;  /*2*font-size(48px) of this element here(h1)  = 96px*/
+    padding:2em; 
+}
+.box1{
+    font-size :20px; 
+}
+
+.heading-2{
+    font-size : 3em; /* 3 *20 size of parent - html * = 60px */
+    border: 0.3em solid black;  /*0.3*font-size(60px) of this element here(h1)  = 18px*/
+    padding:2em; /*2*font-size(60px) of this element here(h1)  = 120px*/
+}
+
